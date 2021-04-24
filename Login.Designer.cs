@@ -30,12 +30,12 @@ namespace E_Survry
         private void InitializeComponent()
         {
             this.Email = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.emailLogin = new System.Windows.Forms.TextBox();
+            this.passLogin = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.loginBtn = new System.Windows.Forms.Button();
+            this.registerBtn = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,23 +50,22 @@ namespace E_Survry
             this.Email.Size = new System.Drawing.Size(44, 16);
             this.Email.TabIndex = 0;
             this.Email.Text = "Email";
-            this.Email.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // emailLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 213);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(259, 22);
-            this.textBox1.TabIndex = 3;
+            this.emailLogin.Location = new System.Drawing.Point(45, 213);
+            this.emailLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.emailLogin.Name = "emailLogin";
+            this.emailLogin.Size = new System.Drawing.Size(259, 22);
+            this.emailLogin.TabIndex = 3;
             // 
-            // textBox2
+            // passLogin
             // 
-            this.textBox2.Location = new System.Drawing.Point(44, 278);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(259, 22);
-            this.textBox2.TabIndex = 4;
+            this.passLogin.Location = new System.Drawing.Point(44, 278);
+            this.passLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.passLogin.Name = "passLogin";
+            this.passLogin.Size = new System.Drawing.Size(259, 22);
+            this.passLogin.TabIndex = 4;
             // 
             // password
             // 
@@ -87,37 +86,36 @@ namespace E_Survry
             this.label3.Size = new System.Drawing.Size(63, 22);
             this.label3.TabIndex = 18;
             this.label3.Text = "Login";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button1
+            // loginBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(185, 413);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 39);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "LOGIN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.loginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.loginBtn.FlatAppearance.BorderSize = 0;
+            this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.loginBtn.Location = new System.Drawing.Point(185, 413);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(119, 39);
+            this.loginBtn.TabIndex = 6;
+            this.loginBtn.Text = "LOGIN";
+            this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
-            // button2
+            // registerBtn
             // 
-            this.button2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(44, 413);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 39);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "CLEAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.registerBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.registerBtn.BackColor = System.Drawing.Color.White;
+            this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.registerBtn.Location = new System.Drawing.Point(44, 413);
+            this.registerBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.registerBtn.Name = "registerBtn";
+            this.registerBtn.Size = new System.Drawing.Size(105, 39);
+            this.registerBtn.TabIndex = 19;
+            this.registerBtn.Text = "REGISTER";
+            this.registerBtn.UseVisualStyleBackColor = false;
             // 
             // checkBox1
             // 
@@ -143,7 +141,6 @@ namespace E_Survry
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Login
             // 
@@ -152,19 +149,18 @@ namespace E_Survry
             this.ClientSize = new System.Drawing.Size(346, 501);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.password);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passLogin);
+            this.Controls.Add(this.emailLogin);
             this.Controls.Add(this.Email);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Login";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -174,12 +170,12 @@ namespace E_Survry
         #endregion
 
         private System.Windows.Forms.Label Email;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox emailLogin;
+        private System.Windows.Forms.TextBox passLogin;
         private System.Windows.Forms.Label password;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button loginBtn;
+        private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
