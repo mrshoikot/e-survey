@@ -47,9 +47,13 @@ namespace E_Survry
             this.Qustionbox = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Submit = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.Close = new System.Windows.Forms.Button();
             this.Qustion2.SuspendLayout();
             this.Qustion3.SuspendLayout();
             this.Qustionbox.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -272,12 +276,45 @@ namespace E_Survry
             this.label1.TabIndex = 44;
             this.label1.Text = "SURVEYS QUSTION";
             // 
+            // Submit
+            // 
+            this.Submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Submit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Submit.Location = new System.Drawing.Point(456, 702);
+            this.Submit.Name = "Submit";
+            this.Submit.Size = new System.Drawing.Size(95, 38);
+            this.Submit.TabIndex = 45;
+            this.Submit.Text = "Submit";
+            this.Submit.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel3.Controls.Add(this.Close);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(677, 43);
+            this.panel3.TabIndex = 46;
+            // 
+            // Close
+            // 
+            this.Close.Location = new System.Drawing.Point(600, 7);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(69, 28);
+            this.Close.TabIndex = 45;
+            this.Close.Text = "Close";
+            this.Close.UseVisualStyleBackColor = true;
+            // 
             // Survey
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(696, 810);
+            this.ClientSize = new System.Drawing.Size(677, 795);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.Submit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Qustionbox);
             this.Controls.Add(this.Qustion3);
@@ -290,6 +327,7 @@ namespace E_Survry
             this.Qustion3.PerformLayout();
             this.Qustionbox.ResumeLayout(false);
             this.Qustionbox.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,5 +352,8 @@ namespace E_Survry
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Submit;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button Close;
     }
 }
