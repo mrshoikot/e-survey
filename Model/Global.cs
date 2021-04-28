@@ -9,5 +9,11 @@ namespace E_Survry.Model
     public static class Global
     {
         public const string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mrsho\Documents\survey_win\db.mdf;Integrated Security=True;Connect Timeout=30";
+        public static Survey SelectedSurvey { get; set; }
+
+        public static void selectSurvey(Survey survey)
+        {
+            SelectedSurvey = survey;
+        }
     }
 }

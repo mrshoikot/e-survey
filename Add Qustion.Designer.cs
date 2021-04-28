@@ -1,7 +1,7 @@
 ﻿
 namespace E_Survry
 {
-    partial class Analysis
+    partial class Add_Question
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,9 @@ namespace E_Survry
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.type = new System.Windows.Forms.ComboBox();
             this.Submit = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.addsurvey = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,12 +40,10 @@ namespace E_Survry
             this.button8 = new System.Windows.Forms.Button();
             this.logout = new System.Windows.Forms.Button();
             this.survey = new System.Windows.Forms.Button();
-            this.Close = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.panel3.SuspendLayout();
+            this.question = new System.Windows.Forms.TextBox();
+            this.surveyName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.options = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -56,91 +51,53 @@ namespace E_Survry
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(229, 179);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(229, 186);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 25);
+            this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 9;
             this.label2.Text = "Qustion";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(229, 275);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 25);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Answer";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(229, 443);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(229, 241);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 25);
+            this.label4.Size = new System.Drawing.Size(165, 25);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Survey Type";
+            this.label4.Text = "Question Type";
             // 
-            // comboBox1
+            // type
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Shoikot",
-            "jabed",
-            "jahid ",
-            "Shoujan"});
-            this.comboBox1.Location = new System.Drawing.Point(364, 439);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(385, 35);
-            this.comboBox1.TabIndex = 15;
+            this.type.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type.FormattingEnabled = true;
+            this.type.Items.AddRange(new object[] {
+            "Yes/No",
+            "5 Point Scale",
+            "Dropdown"});
+            this.type.Location = new System.Drawing.Point(402, 237);
+            this.type.Name = "type";
+            this.type.Size = new System.Drawing.Size(385, 35);
+            this.type.TabIndex = 15;
+            this.type.SelectedIndexChanged += new System.EventHandler(this.type_SelectedIndexChanged);
             // 
             // Submit
             // 
             this.Submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Submit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Submit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Submit.Location = new System.Drawing.Point(631, 551);
+            this.Submit.Location = new System.Drawing.Point(658, 552);
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(95, 38);
             this.Submit.TabIndex = 20;
             this.Submit.Text = "Submit";
             this.Submit.UseVisualStyleBackColor = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Shoikot",
-            "jabed",
-            "jahid ",
-            "Shoujan"});
-            this.comboBox2.Location = new System.Drawing.Point(364, 172);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(385, 35);
-            this.comboBox2.TabIndex = 22;
-            // 
-            // addsurvey
-            // 
-            this.addsurvey.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.addsurvey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addsurvey.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addsurvey.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addsurvey.Location = new System.Drawing.Point(409, 88);
-            this.addsurvey.Name = "addsurvey";
-            this.addsurvey.Size = new System.Drawing.Size(250, 42);
-            this.addsurvey.TabIndex = 44;
-            this.addsurvey.Text = "Add Survey";
-            this.addsurvey.UseVisualStyleBackColor = false;
+            this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel3.Controls.Add(this.Close);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
@@ -171,7 +128,7 @@ namespace E_Survry
             // 
             // button9
             // 
-            this.button9.Font = new System.Drawing.Font("Roboto Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(17, 307);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(161, 58);
@@ -181,13 +138,14 @@ namespace E_Survry
             // 
             // button8
             // 
-            this.button8.Font = new System.Drawing.Font("Roboto Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(17, 214);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(161, 58);
             this.button8.TabIndex = 45;
             this.button8.Text = "Dashbord";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // logout
             // 
@@ -197,83 +155,71 @@ namespace E_Survry
             this.logout.TabIndex = 44;
             this.logout.Text = "Log Out";
             this.logout.UseVisualStyleBackColor = true;
+            this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
             // survey
             // 
-            this.survey.Font = new System.Drawing.Font("Roboto Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.survey.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.survey.Location = new System.Drawing.Point(17, 121);
             this.survey.Name = "survey";
             this.survey.Size = new System.Drawing.Size(161, 58);
             this.survey.TabIndex = 42;
             this.survey.Text = "Surveys";
             this.survey.UseVisualStyleBackColor = true;
+            this.survey.Click += new System.EventHandler(this.survey_Click);
             // 
-            // Close
+            // question
             // 
-            this.Close.Location = new System.Drawing.Point(518, 3);
-            this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(69, 28);
-            this.Close.TabIndex = 46;
-            this.Close.Text = "Close";
-            this.Close.UseVisualStyleBackColor = true;
+            this.question.Location = new System.Drawing.Point(402, 179);
+            this.question.Multiline = true;
+            this.question.Name = "question";
+            this.question.Size = new System.Drawing.Size(385, 37);
+            this.question.TabIndex = 48;
             // 
-            // textBox1
+            // surveyName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(364, 352);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 36);
-            this.textBox1.TabIndex = 48;
+            this.surveyName.AutoSize = true;
+            this.surveyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surveyName.Location = new System.Drawing.Point(332, 92);
+            this.surveyName.Name = "surveyName";
+            this.surveyName.Size = new System.Drawing.Size(0, 25);
+            this.surveyName.TabIndex = 49;
             // 
-            // textBox2
+            // label1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(571, 352);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 36);
-            this.textBox2.TabIndex = 49;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(231, 349);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 16);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "Options (Comma separated)";
             // 
-            // textBox3
+            // options
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(364, 272);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 36);
-            this.textBox3.TabIndex = 50;
+            this.options.Location = new System.Drawing.Point(453, 348);
+            this.options.Multiline = true;
+            this.options.Name = "options";
+            this.options.Size = new System.Drawing.Size(334, 81);
+            this.options.TabIndex = 51;
             // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(571, 272);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 36);
-            this.textBox4.TabIndex = 51;
-            // 
-            // Analysis
+            // Add_Question
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 615);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.options);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.surveyName);
+            this.Controls.Add(this.question);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.addsurvey);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.Submit);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.type);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Name = "Analysis";
+            this.Name = "Add_Question";
             this.Text = "Analysis";
-            this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -283,12 +229,9 @@ namespace E_Survry
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox type;
         private System.Windows.Forms.Button Submit;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button addsurvey;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -296,10 +239,9 @@ namespace E_Survry
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button logout;
         private System.Windows.Forms.Button survey;
-        private System.Windows.Forms.Button Close;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox question;
+        private System.Windows.Forms.Label surveyName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox options;
     }
 }

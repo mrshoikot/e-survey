@@ -36,7 +36,6 @@ namespace E_Survry
             this.label3 = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
             this.registerBtn = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -116,17 +115,7 @@ namespace E_Survry
             this.registerBtn.TabIndex = 19;
             this.registerBtn.Text = "REGISTER";
             this.registerBtn.UseVisualStyleBackColor = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(185, 310);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(120, 20);
-            this.checkBox1.TabIndex = 21;
-            this.checkBox1.Text = "Show Password";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // pictureBox1
             // 
@@ -148,7 +137,6 @@ namespace E_Survry
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(346, 501);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.loginBtn);
@@ -176,7 +164,6 @@ namespace E_Survry
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.Button registerBtn;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

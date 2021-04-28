@@ -58,14 +58,20 @@ namespace E_Survry
                         string name = dataReader.GetString(1);
                         string email = dataReader.GetString(2);
                         bool isAdmin = dataReader.GetString(3) == "admin";
-                        string username = dataReader.GetString(4);
 
                         Auth.Login(id, name, isAdmin, email);
-                        Console.WriteLine(Auth.user.isAdmin);
                     }
 
-                    Surveys s = new Surveys();
-                    s.Show();
+                    if (Auth.user.isAdmin)
+                    {
+                        Dashboard s = new Dashboard();
+                        s.Show();
+                    }
+                    else
+                    {
+                        Surveys s = new Surveys();
+                        s.Show();
+                    }
                     this.Hide();
                 }
                 else
@@ -76,6 +82,13 @@ namespace E_Survry
                 conn.Close();
 
             }
+        }
+
+        private void registerBtn_Click(object sender, EventArgs e)
+        {
+            Register r = new Register();
+            this.Hide();
+            r.Show();
         }
     }
 }

@@ -84,11 +84,19 @@ namespace E_Survry
                     }
                     else
                     {
-                        System.Windows.Forms.MessageBox.Show("Success");
+                        Login l = new Login();
+                        l.Show();
+                        this.Hide();
                     }
                 }
             }
         }
 
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Hide();
+        }
     }
 }

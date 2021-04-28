@@ -45,7 +45,7 @@ namespace E_Survry
             this.password.AutoSize = true;
             this.password.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password.Location = new System.Drawing.Point(62, 216);
-            this.password.Name = "pass";
+            this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(69, 16);
             this.password.TabIndex = 11;
             this.password.Text = "Password";
@@ -76,6 +76,7 @@ namespace E_Survry
             this.cancelBtn.TabIndex = 8;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = false;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // Email
             // 
